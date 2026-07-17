@@ -1,92 +1,92 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eagles Keep Counseling</title>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eagles Keep Counseling</title>
 <style>
   :root {
     --terracotta: #C1633F;
     --beige: #F3E9DC;
     --teal: #4F7C77;
     --dark: #33302B;
-}
+  }
   * { box-sizing: border-box; }
   body {
-        margin: 0;
+    margin: 0;
     font-family: 'Georgia', 'Times New Roman', serif;
     background: var(--beige);
     color: var(--dark);
     line-height: 1.6;
-}
+  }
   header {
-        background: linear-gradient(135deg, var(--teal), var(--dark));
+    background: linear-gradient(135deg, var(--teal), var(--dark));
     color: var(--beige);
     text-align: center;
     padding: 70px 20px 50px;
-}
+  }
   header .eagle {
     width: 64px;
     height: 64px;
     margin-bottom: 18px;
   }
   header h1 {
-        margin: 0;
+    margin: 0;
     font-size: 2.4em;
     letter-spacing: 1px;
     font-weight: normal;
   }
   header p.tagline {
-        font-style: italic;
+    font-style: italic;
     color: var(--beige);
     opacity: 0.85;
     margin-top: 10px;
-        font-size: 1.1em;
-}
+    font-size: 1.1em;
+  }
   main {
-        max-width: 720px;
+    max-width: 720px;
     margin: 0 auto;
     padding: 50px 24px 80px;
-}
+  }
   section { margin-bottom: 48px; }
   h2 {
     color: var(--terracotta);
-          font-size: 1.4em;
+    font-size: 1.4em;
     border-bottom: 2px solid var(--terracotta);
-          display: inline-block;
+    display: inline-block;
     padding-bottom: 4px;
-          margin-bottom: 18px;
-}
+    margin-bottom: 18px;
+  }
   .sankofa {
-        background: #fff;
-        border-left: 4px solid var(--teal);
-          padding: 18px 22px;
+    background: #fff;
+    border-left: 4px solid var(--teal);
+    padding: 18px 22px;
     border-radius: 4px;
     font-style: italic;
     color: var(--teal);
-      }
-        .services-list {
-        list-style: none;
+  }
+  .services-list {
+    list-style: none;
     padding: 0;
     margin: 0;
     display: grid;
     gap: 14px;
-}
+  }
   .services-list li {
-          background: #fff;
+    background: #fff;
     padding: 16px 20px;
     border-radius: 6px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-      }
-      .services-list li strong { color: var(--terracotta); }
+  }
+  .services-list li strong { color: var(--terracotta); }
   .links {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    }
-        .btn {
-        display: block;
-        text-align: center;
+  }
+  .btn {
+    display: block;
+    text-align: center;
     text-decoration: none;
     padding: 16px 20px;
     border-radius: 8px;
@@ -94,32 +94,120 @@
     font-weight: bold;
     letter-spacing: 0.3px;
     transition: transform 0.15s ease, opacity 0.15s ease;
-    }
-      .btn:hover { transform: translateY(-2px); opacity: 0.92; }
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .btn:hover { transform: translateY(-2px); opacity: 0.92; }
   .btn-primary { background: var(--terracotta); color: #fff; }
   .btn-secondary { background: var(--teal); color: #fff; }
   footer {
     text-align: center;
     padding: 30px 20px;
-        color: var(--teal);
+    color: var(--teal);
     font-size: 0.9em;
-}
+  }
+
+  /* Signup banner */
+  .signup-banner {
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px 22px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    text-align: center;
+  }
+  .signup-banner h2 {
+    display: block;
+    border-bottom: none;
+  }
+  .signup-banner p {
+    margin-top: 0;
+    color: var(--dark);
+  }
+  .signup-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  .signup-form input[type="email"] {
+    flex: 1 1 240px;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    font-family: inherit;
+  }
+  .signup-form button {
+    flex: 0 0 auto;
+    padding: 12px 22px;
+  }
+  .signup-note {
+    font-size: 0.8em;
+    color: #8a8378;
+    margin-top: 10px;
+  }
+
+  /* Programs */
+  .program-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 22px 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    margin-bottom: 20px;
+  }
+  .program-card h3 {
+    color: var(--terracotta);
+    margin: 0 0 4px;
+    font-size: 1.15em;
+  }
+  .program-card .price-tag {
+    display: inline-block;
+    font-size: 0.85em;
+    color: var(--teal);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .program-card p {
+    margin: 0 0 10px;
+  }
+  .program-card .fine-print {
+    font-size: 0.8em;
+    color: #8a8378;
+    font-style: italic;
+  }
 </style>
 </head>
 <body>
 
 <header>
   <svg class="eagle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#F3E9DC" stroke-width="2.5">
-        <path d="M50 15 L20 45 L38 45 L15 65 L40 60 L35 85 L50 68 L65 85 L60 60 L85 65 L62 45 L80 45 Z" stroke-linejoin="round"/>
+    <path d="M50 15 L20 45 L38 45 L15 65 L40 60 L35 85 L50 68 L65 85 L60 60 L85 65 L62 45 L80 45 Z" stroke-linejoin="round"/>
   </svg>
-        <h1>Eagles Keep Counseling</h1>
+  <h1>Eagles Keep Counseling</h1>
   <p class="tagline">You can always begin again.</p>
 </header>
 
 <main>
-      <section>
+
+  <section class="signup-banner" id="signup">
+    <h2>Stay Connected</h2>
+    <p>Get wellness tips, course announcements, and early access to new programs.</p>
+    <form class="signup-form" action="https://formsubmit.co/eagleskeepcounseling@outlook.com" method="POST">
+      <input type="hidden" name="_subject" value="New Eagles Keep Counseling newsletter signup">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://prettyhallar5-sudo.github.io/eagles-keep-landing/#signup">
+      <input type="text" name="_honey" style="display:none">
+      <input type="email" name="email" placeholder="Your email address" required>
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+    <p class="signup-note">No spam, ever &mdash; just occasional updates from Eagles Keep Counseling.</p>
+  </section>
+
+  <section>
     <h2>About</h2>
-        <p>Eagles Keep Counseling is a wellness practice rooted in mental health, somatic care, and culturally aware, trauma-informed healing. Our work blends licensed clinical counseling with holistic wellness practices &mdash; helping people pursue transformation without guilt, shame, or judgment.</p>
+    <p>Eagles Keep Counseling is a wellness practice rooted in mental health, somatic care, and culturally aware, trauma-informed healing. Our work blends licensed clinical counseling with holistic wellness practices &mdash; helping people pursue transformation without guilt, shame, or judgment.</p>
     <div class="sankofa">
       "Sankofa" &mdash; go back and get it. We believe healing means revisiting the past for wisdom, reclaiming what serves us, and moving forward with grace. You are always welcome to begin again.
     </div>
@@ -130,23 +218,42 @@
     <ul class="services-list">
       <li><strong>Individual Counseling</strong> &mdash; trauma-informed, EMDR-informed talk therapy for adults and adolescents (13+).</li>
       <li><strong>Somatic &amp; Yoga-Informed Wellness</strong> &mdash; body-based practices to support nervous system regulation and healing.</li>
-                <li><strong>Corporate &amp; Educator Wellness</strong> &mdash; consulting, workshops, and training for organizations, schools, and universities.</li>
+      <li><strong>Corporate &amp; Educator Wellness</strong> &mdash; consulting, workshops, and training for organizations, schools, and universities.</li>
       <li><strong>Wellness Products</strong> &mdash; merchandise and tools designed to support your everyday healing practice.</li>
     </ul>
+  </section>
+
+  <section id="programs">
+    <h2>Programs for Schools &amp; Educators</h2>
+
+    <div class="program-card">
+      <h3>Trauma-Informed Educator Training</h3>
+      <span class="price-tag">$300&ndash;$600 per seat &middot; flat rate available for whole-staff bookings</span>
+      <p>A live, interactive professional development course for teachers and school staff, grounded in SAMHSA's trauma-informed framework and the National Child Traumatic Stress Network's system model for trauma-informed schools. Educators learn to recognize the signs of trauma, respond in ways that avoid re-traumatizing students, and apply classroom strategies built on safety, trust, and student voice &mdash; taught by a licensed, trauma- and EMDR-informed clinician.</p>
+      <p class="fine-print">Contact hours may qualify for district professional-enrichment credit depending on local policy; this course does not currently issue official PLU/CEU credit.</p>
+    </div>
+
+    <div class="program-card">
+      <h3>Educational Trauma Debrief</h3>
+      <span class="price-tag">Custom quote, based on group size &amp; format</span>
+      <p>Structured, psychological-first-aid-informed support for school staff following a crisis or traumatic incident in the school community. This is deliberately designed as ongoing psychoeducational staff support rather than a single mandated "debriefing" session &mdash; research shows rigid one-time debriefing models can be ineffective or even counterproductive. Sessions are scaled to your school's needs and aligned with recognized school crisis-response practice.</p>
+    </div>
+
+    <a class="btn btn-secondary" href="mailto:eagleskeepcounseling@outlook.com?subject=Booking%20Inquiry%3A%20Educator%20Training%20or%20Debrief">Book a Consultation</a>
   </section>
 
   <section>
     <h2>Connect</h2>
     <div class="links">
       <a class="btn btn-primary" href="https://www.psychologytoday.com/profile/1022115" target="_blank" rel="noopener">Book a Session &mdash; Psychology Today Profile</a>
-        <a class="btn btn-secondary" href="https://wdp1dq-an.myshopify.com" target="_blank" rel="noopener">Shop Wellness Products &mdash; HALO Shopify Store</a>
+      <a class="btn btn-secondary" href="https://wdp1dq-an.myshopify.com" target="_blank" rel="noopener">Shop Wellness Products &mdash; HALO Shopify Store</a>
     </div>
   </section>
 </main>
 
 <footer>
   &copy; 2026 Eagles Keep Counseling &middot; Wellness without guilt, shame, or judgment.
-  </footer>
+</footer>
 
-  </body>
-  </html>
+</body>
+</html>
